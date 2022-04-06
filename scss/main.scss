@@ -18,13 +18,12 @@ section {
   justify-content: space-around;
   flex-direction: column;
   .section-text {
-    .title{
+    .title {
       font-weight: 500;
       font-size: 3.5rem;
     }
-    .info{
+    .info {
       font-size: 1.5rem;
-      
     }
   }
   .btn-group {
@@ -37,9 +36,8 @@ section {
         color: white;
       }
     }
-    .ligh-grey-btn{
+    .ligh-grey-btn {
       background-color: rgba(231, 226, 226, 0.736);
-      
     }
     button {
       border: none;
@@ -49,19 +47,23 @@ section {
     }
   }
 }
-//home Page -model-3
+
 header {
+  padding: 0.8em 2.5em;
   top: 0;
   position: sticky;
   display: flex;
-  align-items: center;
-  padding: 0.5em 0;
-  margin: 0 0.5em;
-  font-size: 2.5rem;
   justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  .logo {
+    font-weight: 700;
+    font-size: 1.9rem;
+  }
   .nav-first__links {
     display: none;
   }
+
   .nav-sec__links {
     li:nth-last-child(3) {
       display: none;
@@ -82,6 +84,7 @@ header {
     }
   }
 }
+
 .model-3 {
   background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/fdedb888-973c-45ec-965c-0958d39d08b4/bvlatuR/std/600x1576/M3-Homepage-M);
 }
@@ -107,8 +110,15 @@ header {
 //
 @media screen and (min-width: 756px) {
   header {
-    .nav-first__links,
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    .nav-first__links {
+      display: flex;
+    }
+
     .nav-sec__links {
+      align-items: center;
       display: flex;
       li:nth-last-child(3) {
         display: flex;
@@ -116,6 +126,21 @@ header {
       li:nth-last-child(2) {
         display: flex;
       }
+      .menu-btn{
+        background-color: white;
+        border: none;
+      }
+    }
+  }
+  .btn-group{
+display: flex;
+flex-direction: row;
+    .dark-grey-btn{
+      margin: 0 auto;
+    }
+    .ligh-grey-btn{
+      
+      margin: 0 auto;
     }
   }
   .model-3 {
