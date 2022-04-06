@@ -1,0 +1,46 @@
+T E S L A
+
+<nav>
+    <li><a href="">Model 3</a></li>
+    <li><a href="">Model Y</a></li>
+    <li><a href="">Model S</a></li>
+    <li><a href="">Model X</a></li>
+    <li><a href="">Solor Roof</a></li>
+    <li><a href="">Solor Panels</a></li>
+</nav>
+
+
+//
+
+<nav>
+    <li><a href="">Shop</a></li>
+    <li><a href="">Account</a></li>
+    <li><a href="">Menu</a></li>
+</nav>
+
+//page no-1
+ background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D);
+ @include Background-setting;
+
+//page-no2
+background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D);
+@include Background-setting;
+
+//page-no3
+background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop");
+@include Background-setting;
+
+
+//page-no4
+https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D
+
+
+//page-no5
+https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D
+
+
+//page-no6
+https://tesla-cdn.thron.com/delivery/public/image/tesla/c877126e-0db5-409d-a412-04fc94b59b76/bvlatuR/std/2880x1800/HP-SR-Design-D
+
+//page no 7
+https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories
