@@ -3,3 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@mixin li-hover {
+  background-color: rgba(128, 128, 128, 0.302);
+  border-radius: 10px;
+}

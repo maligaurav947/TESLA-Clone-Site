@@ -34,6 +34,18 @@ header {
     li:nth-last-child(2) {
       display: none;
     }
+    .menu-btn{
+      display: flex;
+      align-items: center;
+      padding: 0.2em 0.4em;
+     background-color: rgba(132, 135, 135,0.1);
+     border-radius: 10px;
+     a{
+       font-size: 1.5rem;
+       font-weight: 300;
+       
+     } 
+    }
   }
 }
 .model-3 {
