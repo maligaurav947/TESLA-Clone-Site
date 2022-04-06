@@ -11,8 +11,43 @@ a {
   text-decoration: none;
 }
 section {
+  text-align: center;
   height: 100vh;
   @include Background-setting;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  .section-text {
+    .title{
+      font-weight: 500;
+      font-size: 3.5rem;
+    }
+    .info{
+      font-size: 1.5rem;
+      
+    }
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+
+    .dark-grey-btn {
+      background-color: rgba(34, 25, 25, 0.745);
+      a {
+        color: white;
+      }
+    }
+    .ligh-grey-btn{
+      background-color: rgba(231, 226, 226, 0.736);
+      
+    }
+    button {
+      border: none;
+      margin: 0.45em 2em;
+      padding: 0.9em 0.5em;
+      border-radius: 15px;
+    }
+  }
 }
 //home Page -model-3
 header {
@@ -34,17 +69,16 @@ header {
     li:nth-last-child(2) {
       display: none;
     }
-    .menu-btn{
+    .menu-btn {
       display: flex;
       align-items: center;
       padding: 0.2em 0.4em;
-     background-color: rgba(132, 135, 135,0.1);
-     border-radius: 10px;
-     a{
-       font-size: 1.5rem;
-       font-weight: 300;
-       
-     } 
+      background-color: rgba(132, 135, 135, 0.1);
+      border-radius: 10px;
+      a {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
     }
   }
 }
