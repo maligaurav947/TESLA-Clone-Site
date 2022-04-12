@@ -42,72 +42,35 @@ section {
       a {
         color: white;
       }
+    &:hover {
+      background-color: #e7e2e2bc;
 
-      &:hover {
-        background-color: rgba(231, 226, 226, 0.736);
-
-        a {
-          color: black;
-        }
-      }
-    }
-    .ligh-grey-btn {
-      padding: 1.5em;
-      background-color: rgba(231, 226, 226, 0.736);
-      transition: all 0.5s;
-      &:hover {
-        background-color: rgba(34, 25, 25, 0.745);
-        a {
-          color: white;
-        }
-      }
-    }
-    button {
-      border: none;
-      margin: 0.45em 2em;
-      padding: 0.9em 0.5em;
-      border-radius: 15px;
-    }
-  }
-}
-/*
-header {
-  padding: 0.8em 2.5em;
-  top: 0;
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  .logo {
-    font-weight: 700;
-    font-size: 1.9rem;
-  }
-  .nav-first__links {
-    display: none;
-  }
-
-  .nav-sec__links {
-    li:nth-last-child(3) {
-      display: none;
-    }
-    li:nth-last-child(2) {
-      display: none;
-    }
-    .menu-btn {
-      display: flex;
-      align-items: center;
-      padding: 0.2em 0.4em;
-      background-color: rgba(132, 135, 135, 0.1);
-      border-radius: 10px;
       a {
-        font-size: 1.5rem;
-        font-weight: 300;
+        color: black;
       }
     }
   }
+  .ligh-grey-btn {
+    padding: 1.5em;
+    background-color: rgba(231, 226, 226, 0.736);
+    transition: all 0.5s;
+    &:hover {
+      background-color: rgba(34, 25, 25, 0.745);
+      a {
+        color: white;
+      }
+    }
+  }
+  button {
+    border: none;
+    margin: 0.45em 2em;
+    padding: 0.9em 0.5em;
+    border-radius: 15px;
+  }
+  }
 }
-*/
+
+
 
 .navbar {
   top: 0;
@@ -149,13 +112,12 @@ label i {
 }
 .list-sec li a {
   color: rgb(255, 0, 0);
-  transition:none 0.3s;
+  transition: none 0.3s;
   &:hover {
-    
-      color: white;
-   
+    color: white;
   }
 }
+
 @media screen and (max-width: 600px) {
   .menu {
     width: 100%;
@@ -209,6 +171,22 @@ label i {
   background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/69095129-86c5-4f6c-a77a-740ceac04e82/bvlatuR/std/800x2100/Mobile-Accessories);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer-nav {
+    margin: 1.5em;
+    .footer-nav_list {
+      text-align: center;
+      flex-direction: column;
+      padding: 0 1.5em;
+      display: flex;
+      font-size: 1.5em;
+    }
+  }
+}
+
 //
 @media screen and (min-width: 756px) {
   .model-3 {
@@ -236,6 +214,19 @@ label i {
     .dark-grey-btn,
     .ligh-grey-btn {
       border-radius: 0;
+    }
+  }
+
+  footer {
+    display: flex;
+    .footer-nav {
+      margin: 1.5em;
+      .footer-nav_list {
+        flex-direction: row;
+        padding: 0 1.5em;
+        display: flex;
+        font-size: 1.5em;
+      }
     }
   }
 }
