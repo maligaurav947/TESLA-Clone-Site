@@ -27,16 +27,17 @@ section {
     }
   }
   .btn-group {
-    display: flex;
-    flex-direction: column;
-
+    display: inline;
     .dark-grey-btn {
       background-color: rgba(34, 25, 25, 0.745);
+      padding: 1.5em 2.6em;
       a {
         color: white;
       }
     }
     .ligh-grey-btn {
+      padding: 1.5em;
+
       background-color: rgba(231, 226, 226, 0.736);
     }
     button {
@@ -47,7 +48,7 @@ section {
     }
   }
 }
-
+/*
 header {
   padding: 0.8em 2.5em;
   top: 0;
@@ -82,6 +83,70 @@ header {
         font-weight: 300;
       }
     }
+  }
+}
+*/
+
+.navbar {
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+.logo {
+  margin-right: 50px;
+  font-size: 2.2rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 1.5rem;
+}
+#toogle,
+.navbar label {
+  display: none;
+}
+label i {
+  font-size: 1.5rem;
+}
+.menu {
+  margin: 0 0.5em;
+  display: flex;
+}
+.list-sec {
+  margin-left: 0.8em;
+}
+.list-sec li a {
+  color: rgb(255, 0, 0);
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toogle:checked ~ .menu {
+    max-height: 100%;
   }
 }
 
@@ -126,23 +191,13 @@ header {
       li:nth-last-child(2) {
         display: flex;
       }
-      .menu-btn{
+      .menu-btn {
         background-color: white;
         border: none;
       }
     }
   }
-  .btn-group{
-display: flex;
-flex-direction: row;
-    .dark-grey-btn{
-      margin: 0 auto;
-    }
-    .ligh-grey-btn{
-      
-      margin: 0 auto;
-    }
-  }
+  
   .model-3 {
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D);
   }
