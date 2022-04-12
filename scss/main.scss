@@ -4,7 +4,14 @@
 
 li {
   list-style-type: none;
-  padding: 0 0.5em;
+  padding: 0.5em 0.5em;
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgba(34, 25, 25, 0.745);
+    a {
+      color: white;
+    }
+  }
 }
 a {
   color: black;
@@ -31,14 +38,29 @@ section {
     .dark-grey-btn {
       background-color: rgba(34, 25, 25, 0.745);
       padding: 1.5em 2.6em;
+      transition: all 0.5s;
       a {
         color: white;
+      }
+
+      &:hover {
+        background-color: rgba(231, 226, 226, 0.736);
+
+        a {
+          color: black;
+        }
       }
     }
     .ligh-grey-btn {
       padding: 1.5em;
-
       background-color: rgba(231, 226, 226, 0.736);
+      transition: all 0.5s;
+      &:hover {
+        background-color: rgba(34, 25, 25, 0.745);
+        a {
+          color: white;
+        }
+      }
     }
     button {
       border: none;
@@ -127,6 +149,12 @@ label i {
 }
 .list-sec li a {
   color: rgb(255, 0, 0);
+  transition:none 0.3s;
+  &:hover {
+    
+      color: white;
+   
+  }
 }
 @media screen and (max-width: 600px) {
   .menu {
@@ -147,6 +175,15 @@ label i {
   }
   #toogle:checked ~ .menu {
     max-height: 100%;
+  }
+  label {
+    background-color: rgba(119, 119, 119, 0.58);
+    border-radius: 10px;
+    padding: 0.3em;
+    font-size: 1.5rem;
+    &:hover {
+      background-color: rgba(119, 119, 119, 0.12);
+    }
   }
 }
 
@@ -174,30 +211,6 @@ label i {
 
 //
 @media screen and (min-width: 756px) {
-  header {
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    .nav-first__links {
-      display: flex;
-    }
-
-    .nav-sec__links {
-      align-items: center;
-      display: flex;
-      li:nth-last-child(3) {
-        display: flex;
-      }
-      li:nth-last-child(2) {
-        display: flex;
-      }
-      .menu-btn {
-        background-color: white;
-        border: none;
-      }
-    }
-  }
-  
   .model-3 {
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D);
   }
@@ -218,5 +231,11 @@ label i {
   }
   .accessories {
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories);
+  }
+  .btn-group {
+    .dark-grey-btn,
+    .ligh-grey-btn {
+      border-radius: 0;
+    }
   }
 }
